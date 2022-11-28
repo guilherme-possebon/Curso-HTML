@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispostivos diferentes ou simplismente aumente e diminua o tamanho dos eu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/media.png" type="image/png">
+        <img src="Imagens/grande.png" alt="Foto grande">
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>usando audios em HTML</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="audios/Sunny Days - Anno Domini Beats.mp3" type="audio/mpeg">
+        <source src="audios/Sunny Days - Anno Domini Beats.ogg" type="audio/ogg">
+        <source src="audios/Sunny Days - Anno Domini Beats.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir audios <a href="audios/Sunny Days - Anno Domini Beats.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

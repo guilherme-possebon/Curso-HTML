@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        body {
+            height: 300px; /* Altura */
+            width: 300px; /* Largura */
+
+            padding-top: 10px; /* Primeiro começa pelo top */
+            padding-right: 10px; /* depois vai pra direita */
+            padding-bottom: 10px; /* depois vai para baixo */
+            padding-left: 10px; /* depois vai para a esquerda */
+            
+            /* Simplificando o padding:
+            padding: 10px - Vai ser igual para todos os lados
+            padding: 10px 20px - vai ser igual a 10px a parte de cima e de baixo. 
+            Já os 20px vão ser iguais os lados dirita e esquerda
+            padding: 10px 15px 50px 120px - 10px para o top, 15px para o right, 
+            50px para o bottom, e 120px para a left*/
+
+            /* marging: 10px auto 20px auto - 10px para o top, auto para a direita,
+            20px para baixo e auto para a esquerda, assim centralizando as direções
+            direita e esquerda.*/
+
+            /* O border e marging, se aplicam nesse exemplo também. (Em questão da box-level) */
+
+            /* outline-width: 5px 
+               outline-style: dashed; (serrilhado)
+               outline-color: salomon; */
+               /* Simplificando
+               outiline: 5px dashed salomon */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafo também é um Exemplo de box-line, mas os <a href="#">links são exemplos de caixas inline-level</a> Vamos ver como tudo isso funciona</p>
+</body>
+</html>
