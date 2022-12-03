@@ -4,9 +4,7 @@
     padding: 0px;
 }
 :root {
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2:  cursive;
-    --fonte3: 'Sriracha', cursive;
+    --fonte1: cursive;
 }
 body {
     min-height: 100vh;
@@ -66,5 +64,10 @@ section#img02 {
     padding-top: 0px;
 }
 p {
-    font-family: var(--fonte3);
+    font-family: var(--fonte1);
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
 }
