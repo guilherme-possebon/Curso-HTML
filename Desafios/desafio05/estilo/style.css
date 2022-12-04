@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
 }
 :root {
-    --fonte1: cursive;
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif ;
+    --fonte2: 'Passion One', cursive; ;
+    --fonte3: 'Sriracha', cursive; ;
 }
 body {
     min-height: 100vh;
@@ -16,9 +20,10 @@ header {
     padding: 25px;
 }
 header > h1 {
-    padding-top: 50px;
-    font-size: 4em;
+    padding-top: 15px;
+    font-size: 9em;
     font-variant: small-caps;
+    font-family: var(--fonte2);
 }
 header a {
     text-decoration: none;
@@ -30,18 +35,24 @@ header a:hover {
 }
 header > p {
     padding-bottom: 50px;
+    font-family: var(--fonte1);
 }
 section {
     padding-top: 10vh;
     padding-left: 30px;
     line-height: 2em;
     font-size: 3.5vw;
+    font-family: var(--fonte3);
+    padding-bottom: 10vh;
 }
-section#img01 {
+section#img01, section#img02 {
     background-image: url(../imagens/background001.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: right center;
+}
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
 }
 section.imagem {
     background-color: rgb(51, 51, 51);
@@ -49,25 +60,12 @@ section.imagem {
     box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
     background-size: cover;
     background-attachment: fixed;
-    padding-bottom: 10vh;
 }
 section.imagem > p {
     display: inline-block;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.514);
     text-shadow: 1px 1px 0px black;
-}
-section.normal > p {
-    padding-bottom: 10vh;
-}
-section#img02 {
-    background-image: url(../imagens/background002.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: right center;
-}
-p {
-    font-family: var(--fonte1);
 }
 footer {
     background-color: black;
