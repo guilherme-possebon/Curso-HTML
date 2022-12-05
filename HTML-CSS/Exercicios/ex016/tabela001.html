@@ -17,7 +17,11 @@
         td {
             border: 1px solid black;
             padding: 8px;
-            text-align: center;
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: middle; /*Alinhamento vertical*/
+        }
+        .numero {
+            text-align: right;
         }
     /*  table {
             border: 1px solid black; (Vai ficar em torno da tabela)
@@ -42,18 +46,18 @@
         </tr>
         <tr> <!--Segunda linha-->
             <td>A2</td>
-            <td>B2</td>
+            <td class="numero">C2</td>
             <td>C2</td>
         </tr>
         <tr> <!--Terceira linha-->
             <td>A3</td>
-            <td>B3</td>
+            <td class="numero">B3</td>
             <td>C3</td>
         </tr>
         <tr> <!--Quarta linha-->
             <td>A4</td>
             <td>B4</td>
-            <td>C4</td>
+            <td class="numero">C4</td>
         </tr>
     </table>
 </body>
