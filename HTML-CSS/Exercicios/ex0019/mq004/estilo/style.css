@@ -33,7 +33,8 @@ img {
     display: block;
     margin: auto;
 }
-
-#tablet, #print, #pc, #tv {
-    display: none;
-}
+#cel {display: block;}
+#tablet {display: none;}
+#print {display: none;}
+#pc {display: none;}
+#tv {display: none;}
