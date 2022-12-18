@@ -1,0 +1,15 @@
+@media screen and (min-width: 992px){
+    .material-icons {
+        display: none;
+    }
+    menu {
+        display: block;
+        text-align: center;
+    }
+    menu li {
+        display: inline-block;
+    }
+    main {
+        width: 854px;
+    }
+}

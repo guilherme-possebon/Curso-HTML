@@ -7,8 +7,9 @@
    <title>Media Query</title>
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="stylesheet" href="estilo/style.css">
+   <link rel="stylesheet" href="estilo/media-query.css">
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu site</h1>
         <span class="material-icons" onclick="clickmenu()">menu</span>
@@ -20,6 +21,10 @@
                 <li><a href="#">Opção 4</a></li>
                 <li><a href="#">Opção 5</a></li>
                 <li><a href="#">Opção 6</a></li>
+                <li><a href="#">Opção 7</a></li>
+                <li><a href="#">Opção 8</a></li>
+                <li><a href="#">Opção 9</a></li>
+                <li><a href="#">Opção 10</a></li>
             </ul>
         </menu>
     </header>
@@ -39,6 +44,13 @@
             }   else {
                 itens.style.display = 'block'
             }
+        }
+        function mudoutamanho() {
+                if (window.innerWidth >= 992) {
+                    itens.style.display = 'block'
+                } else {
+                    itens.style.display = 'none'
+                }
         }
     </script>
 </body>
